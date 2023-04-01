@@ -1,0 +1,10 @@
+version: "3.4"
+services:
+  ytdl-dl:
+    container_name: 'ytdlp-dl'
+    build: .
+    ports:
+        - '172.20.0.1:3333:3000'
+    volumes:
+        - '/shared/content:/app/content'
+
